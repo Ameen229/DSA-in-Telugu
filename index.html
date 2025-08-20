@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ameen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+  <!-- Menu -->
+
+
+  <header class="container">
+    <h1>Ameen’s DSA Course in Telugu</h1>
+    <p class="note">
+      “This FREE DSA course in Telugu is focused on placements. Every problem is explained step by step with code. We will solve real placement questions from both product-based companies (like FAANG, Microsoft, Amazon) and service-based companies (like TCS, Infosys, Wipro, Accenture). Perfect for cracking your dream job!”
+    </p>
+  </header>
+
+  <!-- Progress Summary -->
+  <section class="container grid progress-grid">
+    <!-- Card: Total -->
+    <article class="card progress-card" data-kind="total">
+      <div class="radial" data-target="total">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="bg" cx="60" cy="60" r="52"></circle>
+          <circle class="fg" cx="60" cy="60" r="52" stroke-linecap="round"></circle>
+        </svg>
+        <div class="radial-center">
+          <span class="radial-percent" id="pct-total">0%</span>
+        </div>
+      </div>
+      <div class="legend">
+        <h3>Total Progress</h3>
+        <p id="txt-total">0 / 455</p>
+      </div>
+    </article>
+
+    <!-- Card: Easy -->
+    <article class="card progress-card" data-kind="easy">
+      <div class="radial" data-target="easy">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="bg" cx="60" cy="60" r="52"></circle>
+          <circle class="fg" cx="60" cy="60" r="52" stroke-linecap="round"></circle>
+        </svg>
+        <div class="radial-center">
+          <span class="radial-percent" id="pct-easy">0%</span>
+        </div>
+      </div>
+      <div class="legend">
+        <h3>Easy</h3>
+        <p id="txt-easy">0 / 131 completed</p>
+      </div>
+    </article>
+
+    <!-- Card: Medium -->
+    <article class="card progress-card" data-kind="medium">
+      <div class="radial" data-target="medium">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="bg" cx="60" cy="60" r="52"></circle>
+          <circle class="fg" cx="60" cy="60" r="52" stroke-linecap="round"></circle>
+        </svg>
+        <div class="radial-center">
+          <span class="radial-percent" id="pct-medium">0%</span>
+        </div>
+      </div>
+      <div class="legend">
+        <h3>Medium</h3>
+        <p id="txt-medium">0 / 187 completed</p>
+      </div>
+    </article>
+
+    <!-- Card: Hard -->
+    <article class="card progress-card" data-kind="hard">
+      <div class="radial" data-target="hard">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="bg" cx="60" cy="60" r="52"></circle>
+          <circle class="fg" cx="60" cy="60" r="52" stroke-linecap="round"></circle>
+        </svg>
+        <div class="radial-center">
+          <span class="radial-percent" id="pct-hard">0%</span>
+        </div>
+      </div>
+      <div class="legend">
+        <h3>Hard</h3>
+        <p id="txt-hard">0 / 136 completed</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- Filters row (just visuals for now) -->
+  <section class="container toolbar">
+    <div class="chip chip-active">All Problems</div>
+    <a href="code.html"><div class="glow-button"></div></a>
+  </section>
+
+   
+ <!-- Steps -->
+  <main class="container steps">
+    <!-- Step 1-->
+    <section class="step">
+      <button class="step-header" type="button">
+        <span class="caret">▸</span>
+        <span class="step-title">Step 1: Array – Easy Problems</span>
+        <span class="step-progress" id="step1-meter">
+          <span class="meter-bar"><span class="meter-fill" style="width:0%"></span></span>
+          <span class="meter-count" id="step1-count">0 / 2</span>
+        </span>
+      </button>
+
+      <div class="problem-list">
+        <div class="table">
+          <div class="t-head">
+            <div>Status</div>
+            <div>Problem</div>
+            <div>YouTube</div>
+            <div>Practice 1</div>
+            <div>Practice 2</div>
+            <div>Difficulty</div>
+          </div>
+
+          <!-- Row 1 -->
+          <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="easy" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Largest Element in an Array</div>
+
+            <a class="brand yt" href="https://youtu.be/2yqBZiG1CnU?si=q9vO0K4hTNVrwcAi" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+            
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://www.geeksforgeeks.org/problems/largest-element-in-array4009/0?utm_medium=collab_striver_ytdescription&utm_campaign=largest-element-in-array&utm_source=youtube" target="_blank" aria-label="GeeksforGeeks">
+              <!-- GeeksforGeeks (stylized L/curl, close to official) -->
+              <img src="gfg.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+          <!-- Row 2 -->
+          <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="medium" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Second Largest Element in an Array without sorting</div>
+
+            <a class="brand yt" href="https://youtu.be/bDYSr-jpwI4?si=k9tpR--OQiYO1CfW" target="_blank" aria-label="YouTube">
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/ninja-and-the-second-order-elements_6581960?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+
+             <a class="brand lc" href="https://www.geeksforgeeks.org/problems/second-largest3735/1?utm_medium=collab_striver_ytdescription&utm_campaign=second-largest&utm_source=youtube" target="_blank" aria-label="GeeksforGeeks">
+              <!-- GeeksforGeeks (stylized L/curl, close to official) -->
+              <img src="gfg.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+            
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+           <!-- Row 3 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Check if the array is sorted</div>
+
+            <a class="brand yt" href="https://youtu.be/fpqU8_t5Rj8?si=KJWF7DNQksCdvIc0" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/ninja-and-the-sorted-check_6581957?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+           <!-- Row 4 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Remove duplicates from Sorted array</div>
+
+            <a class="brand yt" href="https://youtu.be/4V6rcHUCOPY?si=D2krBgoZ5aU2hWwv" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/remove-duplicates-from-sorted-array_1102307?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+           <!-- Row 5 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Left Rotate an array by one place</div>
+
+            <a class="brand yt" href="https://youtu.be/PtnLH0F6NGQ?si=7tXAEruo9pPUN1CU" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/left-rotate-an-array-by-one_5026278?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/rotate-array/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+          
+          <!-- Row 6 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Left rotate an array by D places</div>
+
+            <a class="brand yt" href="https://youtu.be/WHT6Ui-foT8?si=7F_HM7Effxk3hgRI" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/left-rotate-an-array-by-one_5026278?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/rotate-array/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+          
+          <!-- Row 7 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Move Zeros to end</div>
+
+            <a class="brand yt" href="https://youtu.be/bQQIH95Gx2c?si=iA7KK9EC2W5z0-dJ" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/interview-shuriken-41-move-zeroes-to-end_240143" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/move-zeroes/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+           <!-- Row 8 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Linear Search</div>
+
+            <a class="brand yt" href="https://youtu.be/eGfUuia68_8?si=y-7aD35N8dGvwKDk" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/linear-search_6922070?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="#" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+          <!-- Row 9 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Find the Union of Two Sorted Arrays</div>
+
+            <a class="brand yt" href="https://youtu.be/r7UbRmzDnUs?si=--b1zJh8uYRCJzjA" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/sorted-array_6613259?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1?utm_medium=collab_striver_ytdescription&utm_campaign=union-of-two-sorted-arrays&utm_source=youtube" target="_blank" aria-label="GeeksforGeeks">
+              <!-- GeeksforGeeks (stylized L/curl, close to official) -->
+              <img src="gfg.png" alt="GeeksforGeeks Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+           <!-- Row 9.1 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Find Intersection of two sorted Arrays</div>
+
+            <a class="brand yt" href="https://youtu.be/7Pt8RpiF-VA?si=oerhzhcMf4IX-BZ6" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/intersection-of-2-arrays_1082149?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="#" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+          <!-- Row 10 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Find missing number in an array</div>
+
+            <a class="brand yt" href="https://youtu.be/eZT8ttU7ZMc?si=bP1pvMfTTR1AcVqD" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/missing-number_6680467?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/missing-number/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+          <!-- Row 11 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Maximum Consecutive Ones</div>
+
+            <a class="brand yt" href="https://youtu.be/m1DkesS4PHo?si=RYKewBQxLgJ8ImUg" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/maximum-consecutive-ones_3843993?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/max-consecutive-ones/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+          <!-- Row 12 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Find the number that appears once, and other numbers twice.</div>
+
+            <a class="brand yt" href="https://youtu.be/dNWuxGw3a0M?si=lJpNmJaWTM0Sw8wK" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/find-the-single-element_6680465?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/single-number/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+           <!-- Row 13 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Longest subarray with given sum K(positives)</div>
+
+            <a class="brand yt" href="https://youtu.be/f2r-rjAO3R0?si=D0ZX0UEoOhWTRaFh" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/longest-subarray-with-sum-k_6682399?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="#" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+          <!-- Row 14 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Longest subarray with sum K (Positives + Negatives)</div>
+
+            <a class="brand yt" href="https://youtu.be/f2r-rjAO3R0?si=D0ZX0UEoOhWTRaFh" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/longest-subarray-with-sum-k_5713505?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="#" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 2 --> 
+    <section class="step">
+      <button class="step-header" type="button">
+        <span class="caret">▸</span>
+        <span class="step-title">Step 2: Array – Medium Problems</span>
+        <span class="step-progress" id="step1-meter">
+          <span class="meter-bar"><span class="meter-fill" style="width:0%"></span></span>
+          <span class="meter-count" id="step1-count">0 / 2</span>
+        </span>
+      </button>
+
+      <div class="problem-list">
+        <div class="table">
+          <div class="t-head">
+            <div>Status</div>
+            <div>Problem</div>
+            <div>YouTube</div>
+            <div>Practice 1</div>
+            <div>Practice 2</div>
+            <div>Difficulty</div>
+          </div>
+
+          <!-- Row 1 -->
+          <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="easy" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">2sum Problem</div>
+
+            <a class="brand yt" href="https://youtu.be/zUfKYjZkKZ8?si=u28CXEdNG7OuNdRJ" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/two-sum_839653" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/two-sum/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+          <!-- Row 2 -->
+          <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="medium" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Sort an array of 0’s 1’s and 2’s</div>
+
+            <a class="brand yt" href="https://youtu.be/xvZ1ZU1C_go?si=CiGCnxuUqhM1-kKi" target="_blank" aria-label="YouTube">
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/sort-an-array-of-0s-1s-and-2s_892977" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/sort-colors/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+           <!-- Row 3 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Majority Element (>n/2 times)</div>
+
+            <a class="brand yt" href="https://youtu.be/UxYw0n9tbRA?si=5Km4wcLPK7kZtu1Q" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/majority-element_842495" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/majority-element/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+          <!-- Row 4 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Kadane’s Algorithm, maximum subarray sum</div>
+
+            <a class="brand yt" href="https://youtu.be/PhWqFInVGAc?si=RS3FtkKhyWq9xmaP" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/maximum-subarray-sum_630526" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/maximum-subarray/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+          <!-- Row 5 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Stock Buy and Sell</div>
+
+            <a class="brand yt" href="https://youtu.be/7OoaWWBtLrc?si=4_vZCxL-DebVpkO4" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/best-time-to-buy-and-sell-stock_893405" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+          <!-- Row 6 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Rearrange the array in alternating positive and negative items</div>
+
+            <a class="brand yt" href="https://youtu.be/3inF16mIfGo?si=M3AxRhljuKN-oeJm" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/rearrange-array_1093177" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/rearrange-array-elements-by-sign/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+          <!-- Row 7 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Next Permutation</div>
+
+            <a class="brand yt" href="https://youtu.be/s4X-ZEVS_qg?si=5GGlOQ-FdkyyyuQY" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/next-permutaion_893046" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/next-permutation/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+          <!-- Row 8 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Print the matrix in spiral manner</div>
+
+            <a class="brand yt" href="https://youtu.be/8OxaaZIJACc?si=2V3q8ziDsOpkj2L6" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/spiral-matrix_840698" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/spiral-matrix/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+        </div>
+      </div>
+    </section>
+     
+    <!-- Step 3 --> 
+     <section class="step">
+      <button class="step-header" type="button">
+        <span class="caret">▸</span>
+        <span class="step-title">Step 3: Array – Hard Problems</span>
+        <span class="step-progress" id="step1-meter">
+          <span class="meter-bar"><span class="meter-fill" style="width:0%"></span></span>
+          <span class="meter-count" id="step1-count">0 / 2</span>
+        </span>
+      </button>
+
+      <div class="problem-list">
+        <div class="table">
+          <div class="t-head">
+            <div>Status</div>
+            <div>Problem</div>
+            <div>YouTube</div>
+            <div>Practice 1</div>
+            <div>Practice 2</div>
+            <div>Difficulty</div>
+          </div>
+
+          <!-- Row 1 -->
+          <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="easy" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Pascal’s Triangle</div>
+
+            <a class="brand yt" href="https://youtu.be/-BRGokKR9J4?si=5iZvtYL0IcG0NMNK" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/pascal-s-triangle_1089580" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/pascals-triangle/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+          <!-- Row 2 -->
+          <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="medium" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Majority Element (n/3 times)</div>
+
+            <a class="brand yt" href="https://youtu.be/IoUlXyO9WvQ?si=_FXZe5gfx4ZgBEB-" target="_blank" aria-label="YouTube">
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/majority-element_6915220?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/majority-element-ii/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+           <!-- Row 3 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">3-Sum Problem</div>
+
+            <a class="brand yt" href="https://youtu.be/G1UCVEpZiso?si=nl78hAFdAWZZzsvB" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/three-sum_6922132?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/3sum/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+           <!-- Row 4 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">4-Sum Problem</div>
+
+            <a class="brand yt" href="https://youtu.be/2lEHUoWqHUU?si=M_n3U_NiHhfb2ka3" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/4sum_5713771?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/4sum/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge hard">Hard</span>
+            </div>
+          </label>
+
+           <!-- Row 5 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Largest Subarray with 0 Sum</div>
+
+            <a class="brand yt" href="https://youtu.be/0_qNjwrVPJM?si=72xc72_yGtNm-3fC" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/longest-subset-zero-sum_920321" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://www.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="gfg.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+           <!-- Row 6 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Count number of subarrays with given xor K</div>
+
+            <a class="brand yt" href="https://youtu.be/YEkzNIHlMG8?si=gRdXuLEhZcfXZ_Oz" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/subarrays-with-xor-k_6826258?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://www.interviewbit.com/problems/subarray-with-given-xor/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge hard">Hard</span>
+            </div>
+          </label>
+
+           <!-- Row 7 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Merge Overlapping Subintervals</div>
+
+            <a class="brand yt" href="https://youtu.be/hv06hujgZPs?si=GS4ZXqpgfAM0Rg1k" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/merge-all-overlapping-intervals_6783452?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/merge-intervals/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+           <!-- Row 8 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Merge two sorted arrays without extra space</div>
+
+            <a class="brand yt" href="https://youtu.be/VdtYCR6LXkA?si=g6kpsM-tg7fLpT4N" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/merge-two-sorted-arrays-without-extra-space_6898839?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/merge-sorted-array/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+           <!-- Row 9 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Find the repeating and missing number</div>
+
+            <a class="brand yt" href="https://youtu.be/gXIDyIRSUio?si=Ejw3orEalCQ1-Igz" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/missing-and-repeating-numbers_873366" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1?utm_medium=collab_striver_ytdescription&utm_campaign=find-missing-and-repeating&utm_source=youtube" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="gfg.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge hard">Hard</span>
+            </div>
+          </label>
+
+           <!-- Row 10 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Count inversions</div>
+
+            <a class="brand yt" href="https://youtu.be/aIIXpZPS6mo?si=xD88L6qrddSu1P_N" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/count-inversions_615" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://www.geeksforgeeks.org/problems/inversion-of-array-1587115620/1?utm_medium=collab_striver_ytdescription&utm_campaign=inversion-of-array&utm_source=youtube" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="gfg.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge hard">Hard</span>
+            </div>
+          </label>
+
+           <!-- Row 11 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Reverse Pairs</div>
+
+            <a class="brand yt" href="https://youtu.be/dBhSki16p6g?si=8uFjfqkZmCcmcnMh" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/team-contest_6840309?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/reverse-pairs/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge hard">Hard</span>
+            </div>
+          </label>
+
+           <!-- Row 12 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Maximum Product Subarray</div>
+
+            <a class="brand yt" href="https://youtu.be/vYuP5zz8i28?si=udokB-IljWXi62mh" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/subarray-with-maximum-product_6890008?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/maximum-product-subarray/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+        </div>
+      </div>
+    </section>
+    
+    <!-- Step 4 -->
+     <section class="step">
+      <button class="step-header" type="button">
+        <span class="caret">▸</span>
+        <span class="step-title">Step 4: Binary Search – 1D Array(Easy)</span>
+        <span class="step-progress" id="step1-meter">
+          <span class="meter-bar"><span class="meter-fill" style="width:0%"></span></span>
+          <span class="meter-count" id="step1-count">0 / 2</span>
+        </span>
+      </button>
+
+      <div class="problem-list">
+        <div class="table">
+          <div class="t-head">
+            <div>Status</div>
+            <div>Problem</div>
+            <div>YouTube</div>
+            <div>Practice 1</div>
+            <div>Practice 2</div>
+            <div>Difficulty</div>
+          </div>
+
+          <!-- Row 1 -->
+          <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="easy" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Binary Search to find X in sorted array</div>
+
+            <a class="brand yt" href="https://youtu.be/TJHMs81sPeE?si=dwM_orZnmoumDBm4" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/binary-search_972?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/binary-search/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+          <!-- Row 2 -->
+          <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="medium" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Implement Lower Bound</div>
+
+            <a class="brand yt" href="https://youtu.be/nV-TsaNtNYs?si=3IOmWXuVTy7WeOD1" target="_blank" aria-label="YouTube">
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/implement-lower-bound_17076912" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1?track=DSASP-Searching&utm_medium=collab_striver_ytdescription&utm_campaign=floor-in-a-sorted-array&utm_source=youtube&amp%253BbatchId=154" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="gfg.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+           <!-- Row 3 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Implement Upper Bound</div>
+
+            <a class="brand yt" href="https://youtu.be/Trttgm2QyZY?si=n9uZmgWegSWPtTAR" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/implement-upper-bound_8165383" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://www.geeksforgeeks.org/problems/ceil-the-floor2802/1?utm_medium=collab_striver_ytdescription&utm_campaign=ceil-the-floor&utm_source=youtube" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="gfg.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+           <!-- Row 4 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Search Insert Position</div>
+
+            <a class="brand yt" href="https://youtu.be/qe4CywT204U?si=GOLBFogHOjgFo1mS" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/algorithm-to-find-best-insert-position-in-sorted-array_839813" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/search-insert-position/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+           <!-- Row 5 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Floor/Ceil in Sorted Array</div>
+
+            <a class="brand yt" href="https://youtu.be/iyQRieeQ3BE?si=caiE72lfAuLTuRj9" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/ceiling-in-a-sorted-array_1825401" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="#" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+           <!-- Row 6 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Find the first or last occurrence of a given number in a sorted array</div>
+
+            <a class="brand yt" href="https://youtu.be/_7-YeVXvdhk?si=HHov0ASgg_ZIme3k" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/first-and-last-position-of-an-element-in-sorted-array_839724" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+           <!-- Row 7 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Search in Rotated Sorted Array I</div>
+
+            <a class="brand yt" href="https://youtu.be/6okHIAGmdGI?si=5HRqZqiE5qU7zEy-" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/search-in-rotated-sorted-array_1082554" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/search-in-rotated-sorted-array/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+           <!-- Row 8 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Search in Rotated Sorted Array II</div>
+
+            <a class="brand yt" href="https://youtu.be/O8oUPMZlerg?si=1My73oxcRKbDyOha" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/search-in-a-rotated-sorted-array-ii_7449547" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+           <!-- Row 9 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Find minimum in Rotated Sorted Array</div>
+
+            <a class="brand yt" href="https://youtu.be/hATRdTJ3VPo?si=rvDTIERg4gteVXOZ" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/rotated-array_1093219" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge medium">Medium</span>
+            </div>
+          </label>
+
+           <!-- Row 10 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Find out how many times has an array been rotated</div>
+
+            <a class="brand yt" href="https://youtu.be/Ulu_VxS4vNU?si=5WdwiwedeH742VkI" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/rotation_7449070" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://www.geeksforgeeks.org/problems/rotation4723/1" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="gfg.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+           <!-- Row 11 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Single element in a Sorted Array</div>
+
+            <a class="brand yt" href="https://youtu.be/hf5XTeb3cgk?si=KTzKP6r0U6Qg7pWz" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/unique-element-in-sorted-array_1112654" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/single-element-in-a-sorted-array/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge easy">Easy</span>
+            </div>
+          </label>
+
+           <!-- Row 12 -->
+           <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="hard" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Find peak element</div>
+
+            <a class="brand yt" href="https://youtu.be/qtmP1SPDw0I?si=kV-rUwx3kuaooPvY" target="_blank" aria-label="YouTube">
+              <!-- YouTube official shape (red rounded rect + white play triangle) -->
+              <svg viewBox="0 0 128 90" aria-hidden="true">
+                <rect x="2" y="2" rx="18" ry="18" width="124" height="86" fill="#FF0000"/>
+                <path d="M52 24 L52 66 L88 45 Z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+
+            <a class="brand cn" href="https://www.naukri.com/code360/problems/find-peak-element_1081482" target="_blank" aria-label="Coding Ninjas">
+              <!-- Coding Ninjas (simplified official mark: orange ninja mask) -->
+              <img src="codingninjas.png" alt="Coding Ninjas Logo" style="height:40px;">
+            </a>
+            
+
+            <a class="brand lc" href="https://leetcode.com/problems/find-peak-element/description/" target="_blank" aria-label="LeetCode">
+              <!-- LeetCode (stylized L/curl, close to official) -->
+              <img src="leetcode.png" alt="Leetcode Logo" style="height:40px;">
+            </a>
+
+            <div class="diff">
+              <span class="badge hard">Hard</span>
+            </div>
+          </label>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 5-->
+     <section class="step">
+      <button class="step-header" type="button">
+        <span class="caret">▸</span>
+        <span class="step-title">Step 5: Binary Search on Answers (Medium)</span>
+        <span class="step-progress" id="step1-meter">
+          <span class="meter-bar"><span class="meter-fill" style="width:0%"></span></span>
+          <span class="meter-count" id="step1-count">0 / 2</span>
+        </span>
+      </button>
+
+      <div class="problem-list">
+        <div class="table">
+          <div class="t-head">
+            <div>Status</div>
+            <div>Problem</div>
+            <div>YouTube</div>
+            <div>Practice 1</div>
+            <div>Practice 2</div>
+            <div>Difficulty</div>
+          </div>
+
+          <!-- Row 1 -->
+          <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="easy" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Coming Soon...</div>
+        </div>
+      </div>
+    </section>
+
+    <!--Step 6-->
+     <section class="step">
+      <button class="step-header" type="button">
+        <span class="caret">▸</span>
+        <span class="step-title">Step 6: Binary Search – 2D Arrays(Hard)</span>
+        <span class="step-progress" id="step1-meter">
+          <span class="meter-bar"><span class="meter-fill" style="width:0%"></span></span>
+          <span class="meter-count" id="step1-count">0 / 2</span>
+        </span>
+      </button>
+
+      <div class="problem-list">
+        <div class="table">
+          <div class="t-head">
+            <div>Status</div>
+            <div>Problem</div>
+            <div>YouTube</div>
+            <div>Practice 1</div>
+            <div>Practice 2</div>
+            <div>Difficulty</div>
+          </div>
+
+          <!-- Row 1 -->
+          <label class="t-row">
+            <div class="status">
+              <input type="checkbox" class="problem-check" data-difficulty="easy" />
+              <span class="checkmark"></span>
+            </div>
+
+            <div class="title">Coming Soon...</div>
+
+        </div>
+      </div>
+    </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

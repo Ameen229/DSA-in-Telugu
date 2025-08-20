@@ -1,0 +1,349 @@
+:root{
+  --bg:#0f0f0f;
+  --panel:#1a1a1a;
+  --panel-2:#141414;
+  --text:#e8e8e8;
+  --muted:#a8a8a8;
+  --border:#2a2a2a;
+
+  --brand-red:#ff3b30;     /* YouTube */
+  --brand-orange:#F26A21;  /* Coding Ninjas */
+  --brand-lc:#FFA116;      /* LeetCode accent */
+
+  --easy:#16a34a;
+  --medium:#eab308;
+  --hard:#ef4444;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.45;
+}
+
+.container{max-width:1100px;margin-inline:auto;padding:18px}
+
+h1{font-size:1.6rem;margin:0 0 6px}
+.note{color:var(--muted);margin:0}
+
+/* Cards + Grid */
+.grid{display:grid;gap:14px}
+.progress-grid{grid-template-columns:repeat(4,minmax(220px,1fr))}
+.card{
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:14px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25);
+}
+
+/* Radial progress */
+.radial{position:relative;width:78px;height:78px;flex:0 0 auto}
+.radial svg{width:78px;height:78px;transform:rotate(-90deg)}
+.radial .bg{fill:none;stroke:#2a2a2a;stroke-width:10}
+.radial .fg{fill:none;stroke:var(--easy);stroke-width:10;stroke-dasharray:326;stroke-dashoffset:326;transition:stroke-dashoffset .35s ease, stroke .25s ease}
+.radial-center{
+  position:absolute;inset:0;
+  display:grid;place-items:center;font-weight:600;font-size:.9rem;color:#ddd
+}
+.legend h3{margin:0 0 6px;font-size:1rem}
+.legend p{margin:0;color:var(--muted);font-size:.9rem}
+
+/* Toolbar */
+.toolbar{display:flex;align-items:center;gap:10px}
+.chip{
+  background:#202020;border:1px solid var(--border);
+  padding:8px 12px;border-radius:20px;color:#cfcfcf;font-size:.9rem
+}
+.chip-active{background:#2a2a2a}
+.toolbar-right{margin-left:auto;display:flex;gap:8px}
+.btn,.icon-btn{
+  border:1px solid var(--border);background:#1c1c1c;color:#ddd;
+  border-radius:8px;padding:8px 12px;font-size:.9rem;cursor:pointer
+}
+.icon-btn{display:grid;place-items:center;padding:8px}
+.btn:hover,.icon-btn:hover{background:#232323}
+
+/* Steps / Accordion */
+.steps{display:grid;gap:14px}
+.step{border:1px solid var(--border);border-radius:12px;background:#151515;overflow:hidden}
+.step-header{
+  width:100%;text-align:left;background:#1c1c1c;color:#e7e7e7;
+  padding:14px 16px;border:none;display:flex;align-items:center;gap:10px;cursor:pointer
+}
+.step-header .caret{transition:transform .25s ease;opacity:.9}
+.step-header.open .caret{transform:rotate(90deg)}
+.step-title{font-weight:600}
+.step-progress{margin-left:auto;display:flex;align-items:center;gap:8px;color:var(--muted);font-size:.9rem}
+.meter-bar{width:140px;height:8px;background:#222;border-radius:8px;overflow:hidden;border:1px solid #2b2b2b}
+.meter-fill{display:block;height:100%;width:0;background:linear-gradient(90deg,#6EE7B7,#22C55E 45%,#10B981);transition:width .35s ease;border-radius:8px}
+
+.problem-list{display:none;padding:2px 10px 14px}
+
+/* Table-like layout (CSS grid) */
+.table{display:grid}
+.t-head, .t-row{
+  display:grid;
+  grid-template-columns: 90px 1.6fr 110px 120px 120px 150px;
+  align-items:center;
+  gap:8px;
+}
+.t-head{
+  color:#ff6a5c;background:#171717;border:1px solid var(--border);
+  padding:10px;border-radius:10px;margin:10px 0 6px;font-weight:600
+}
+.t-row{
+  border:1px solid var(--border);background:#131313;padding:10px;border-radius:10px;margin:6px 0;
+  transition:background .2s ease, transform .08s ease
+}
+.t-row:hover{background:#171717;transform:translateY(-1px)}
+
+/* status checkbox */
+.status{display:flex;align-items:center;gap:8px}
+.status input{appearance:none;width:20px;height:20px;border-radius:6px;border:2px solid #3a3a3a;background:#131313;cursor:pointer;position:relative;outline:none}
+.status input:checked{background:linear-gradient(180deg,#22c55e,#16a34a);border-color:transparent}
+.checkmark{width:18px;height:18px;position:absolute;pointer-events:none;margin-left:1px}
+.status input:checked + .checkmark::after{
+  content:"";position:absolute;left:4px;top:0;width:6px;height:12px;border:3px solid white;border-top:0;border-left:0;transform:rotate(45deg)
+}
+
+/* title cell */
+.title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* brand icons */
+.brand{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:9px;border:1px solid var(--border);background:#111;transition:transform .08s ease}
+.brand:hover{transform:translateY(-1px)}
+.brand svg{width:24px;height:24px;display:block}
+
+.brand.yt{background:#170000}
+.brand.cn{background:#1f120a}
+.brand.lc{background:#15120b}
+
+/* Difficulty badges */
+.diff {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;   /* pill shape */
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  min-width: 70px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5) inset;
+}
+
+/* Colors */
+.easy {
+  background-color: #006400; /* dark green */
+}
+
+.medium {
+  background-color: #d4a017; /* golden yellow */
+}
+
+.hard {
+  background-color: #8b0000; /* dark red */
+}
+
+/* Responsive */
+/* --- MOBILE RESCUE PATCH (no HTML changes) --- */
+
+/* 0) Global sanity: stop page-wide sideways scroll & sizing glitches */
+html, body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: auto;          /* page itself never scrolls horizontally */
+  touch-action: pan-y;         /* page scroll only up/down */
+}
+*, *::before, *::after { box-sizing: border-box; }
+img, svg, video { max-width: 100%; height: auto; }
+
+/* Common cause of side-scroll: 100vw inside padded containers */
+*[style*="100vw"], .w-100vw, .hero, .full-bleed {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* 1) Problem table: make ONLY this area scroll horizontally on small screens */
+.problem-list {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;                  /* horizontal scroll lives here */
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch; /* smooth on iOS */
+  overscroll-behavior-x: contain;    /* don't drag the whole page */
+  touch-action: pan-x;               /* allow horizontal swipe here */
+}
+
+/* Keep your existing grid, but let the grid be as wide as it needs */
+.t-head, .t-row {
+  display: grid;
+  grid-template-columns: 70px 1fr 80px 90px 90px 100px;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Make the grid expand to its content so the container can scroll it */
+@media (max-width: 640px) {
+  .t-head, .t-row {
+    width: max-content;      /* table gets intrinsic width -> container scrolls */
+    min-width: 100%;         /* but never smaller than the screen */
+    grid-template-columns: 60px 220px 80px 100px 100px 100px; /* practical widths */
+    font-size: 0.9rem;
+  }
+
+  /* Keep cells on one line (use ellipsis if too long) */
+  .t-head > div,
+  .t-row > div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* 2) Make sure status/tick icons move with the row (no fixed/ghost effect) */
+.status, .status * , .tick, .status-icon {
+  position: relative !important;          /* not fixed */
+  background-attachment: scroll !important; /* not fixed background */
+  transform: none;                         /* avoid sticky transforms on icons */
+  will-change: auto;
+}
+
+/* 3) Nice hint that the table can scroll (fade at right edge on mobile) */
+@media (max-width: 640px) {
+  .problem-list::after {
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0;
+    width: 22px;
+    pointer-events: none;
+    background: linear-gradient(to left, rgba(0,0,0,0.35), rgba(0,0,0,0));
+  }
+}
+
+/* Tablet tweaks (optional) */
+@media (max-width: 960px) {
+  .t-head, .t-row {
+    grid-template-columns: 60px 1fr 70px 80px 80px 90px;
+    font-size: 0.95rem;
+  }
+}
+
+/* --- Progress Bars & Checkbox Fix --- */
+
+/* Allow progress bars to stay visible inside cells */
+.t-row progress,
+.t-row .progress-bar {
+  overflow: visible !important;     /* don’t clip */
+  white-space: normal !important;   /* let them size naturally */
+  min-width: 60px;                  /* ensure not squished to 0 */
+}
+
+/* Checkbox ticks should align inside box */
+.t-row input[type="checkbox"],
+.t-row .tick {
+  position: static !important;      /* let browser place naturally */
+  transform: none !important;
+  margin: 0 auto;                   /* center horizontally */
+  display: inline-flex;             /* aligns icon with box */
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*Progress Bars */
+
+.progress-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* default: 1 per row */
+  gap: 20px;
+}
+
+@media (min-width: 960px) {
+  .progress-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 across on big screens */
+  }
+}
+
+
+
+/* Glowing Button Code*/
+.glow-button {
+  width: 150px;
+  height: 50px;
+  border-radius: 180px;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  cursor: pointer;
+  line-height: 12px;
+  margin: 20px auto; /* keep spacing without affecting others */
+}
+
+.glow-button::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  display: block;
+  width: 80%;
+  height: 70%;
+  top: 15%;
+  left: 10%;
+  transition: 0.3s opacity ease-in-out;
+  filter: blur(15px);
+  opacity: 0;
+  background: inherit;
+}
+
+.glow-button:hover::before {
+  opacity: 1;
+  filter: blur(25px);
+}
+
+.glow-button::after {
+  content: "Code Explanation";
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  color: rgba(235, 235, 235, 1);
+  font-weight: bold;
+  z-index: 5;
+  position: absolute;
+  display: block;
+  border-radius: 180px;
+  width: 99%;
+  height: 80%;
+  top: 11%;
+  left: 4%;
+  background-color: rgb(19, 20, 22);
+}
+
+
+
+
+
+/*Menu Bar */
