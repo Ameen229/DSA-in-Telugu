@@ -78,7 +78,6 @@ h1{font-size:1.6rem;margin:0 0 6px}
       background:#151515;
       /* ✅ Fix: allow vertical page scroll */
   overflow: visible; 
-  max-height: none; 
       }
 .step-header{
   width:100%;text-align:left;background:#1c1c1c;color:#e7e7e7;
@@ -171,8 +170,8 @@ h1{font-size:1.6rem;margin:0 0 6px}
 html, body {
   margin: 0;
   max-width: 100%;
-  overflow-x: auto;          /* page itself never scrolls horizontally */
-  touch-action: pan-y;         /* page scroll only up/down */
+  overflow-x: hidden;  /* prevent page-wide sideways scroll */
+  touch-action: auto;  /* let children decide (our .problem-list will handle x) */
 }
 *, *::before, *::after { box-sizing: border-box; }
 img, svg, video { max-width: 100%; height: auto; }
@@ -192,7 +191,8 @@ img, svg, video { max-width: 100%; height: auto; }
   overflow-y: visible;
   -webkit-overflow-scrolling: touch; /* smooth on iOS */
   overscroll-behavior-x: contain;    /* don't drag the whole page */
-  touch-action: pan-x;               /* allow horizontal swipe here */
+  touch-action: auto;                /* allow both x and y swipes */
+  /* alternative: touch-action: pan-x pan-y; */
 }
 
 /* Keep your existing grid, but let the grid be as wide as it needs */
@@ -348,10 +348,14 @@ img, svg, video { max-width: 100%; height: auto; }
   background-color: rgb(19, 20, 22);
 }
 
+@media (max-width: 640px) {
+  .problem-list { touch-action: auto !important; }
+}
 
 
 
 
 /*Menu Bar */
+
 
 
