@@ -76,10 +76,9 @@ h1{font-size:1.6rem;margin:0 0 6px}
 .step{border:1px solid var(--border);
       border-radius:12px;
       background:#151515;
-       /* allow both directions */
-  overflow: auto; 
-  max-height: 100vh;  
-  -webkit-overflow-scrolling: touch; /* smooth scroll on mobile */
+      /* ✅ Fix: allow vertical page scroll */
+  overflow: visible; 
+  max-height: none; 
       }
 .step-header{
   width:100%;text-align:left;background:#1c1c1c;color:#e7e7e7;
@@ -354,4 +353,5 @@ img, svg, video { max-width: 100%; height: auto; }
 
 
 /*Menu Bar */
+
 
