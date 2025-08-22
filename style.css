@@ -73,12 +73,7 @@ h1{font-size:1.6rem;margin:0 0 6px}
 
 /* Steps / Accordion */
 .steps{display:grid;gap:14px}
-.step{border:1px solid var(--border);
-      border-radius:12px;
-      background:#151515;
-      /* ✅ Fix: allow vertical page scroll */
-  overflow: visible; 
-      }
+.step{border:1px solid var(--border);border-radius:12px;background:#151515;overflow:hidden}
 .step-header{
   width:100%;text-align:left;background:#1c1c1c;color:#e7e7e7;
   padding:14px 16px;border:none;display:flex;align-items:center;gap:10px;cursor:pointer
@@ -170,8 +165,8 @@ h1{font-size:1.6rem;margin:0 0 6px}
 html, body {
   margin: 0;
   max-width: 100%;
-  overflow-x: hidden;  /* prevent page-wide sideways scroll */
-  touch-action: auto;  /* let children decide (our .problem-list will handle x) */
+  overflow-x: auto;          /* page itself never scrolls horizontally */
+  touch-action: pan-y;         /* page scroll only up/down */
 }
 *, *::before, *::after { box-sizing: border-box; }
 img, svg, video { max-width: 100%; height: auto; }
@@ -191,8 +186,7 @@ img, svg, video { max-width: 100%; height: auto; }
   overflow-y: visible;
   -webkit-overflow-scrolling: touch; /* smooth on iOS */
   overscroll-behavior-x: contain;    /* don't drag the whole page */
-  touch-action: auto;                /* allow both x and y swipes */
-  /* alternative: touch-action: pan-x pan-y; */
+  touch-action: pan-x;               /* allow horizontal swipe here */
 }
 
 /* Keep your existing grid, but let the grid be as wide as it needs */
@@ -348,37 +342,8 @@ img, svg, video { max-width: 100%; height: auto; }
   background-color: rgb(19, 20, 22);
 }
 
-/* Mobile horizontal scroll fix */
-@media (max-width: 640px) {
-  .t-head, .t-row {
-    width: max-content;      /* 👈 lets table exceed viewport width */
-    min-width: 600px;        /* 👈 force extra width for scroll */
-    grid-template-columns: 60px 200px 90px 100px 120px 120px;
-    font-size: 0.9rem;
-  }
-
-  /* Prevent text from breaking awkwardly */
-  .t-head > div,
-  .t-row > div {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-
-/* Ensure the container actually scrolls */
-.problem-list {
-  overflow-x: auto;   /* 👈 horizontal scroll */
-  overflow-y: hidden; /* 👈 disable vertical scroll inside */
-  -webkit-overflow-scrolling: touch; /* 👈 smooth iOS/Android scroll */
-}
-
 
 
 
 
 /*Menu Bar */
-
-
-
-
