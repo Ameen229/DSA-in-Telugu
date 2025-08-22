@@ -348,14 +348,37 @@ img, svg, video { max-width: 100%; height: auto; }
   background-color: rgb(19, 20, 22);
 }
 
+/* Mobile horizontal scroll fix */
 @media (max-width: 640px) {
-  .problem-list { touch-action: auto !important; }
+  .t-head, .t-row {
+    width: max-content;      /* 👈 lets table exceed viewport width */
+    min-width: 600px;        /* 👈 force extra width for scroll */
+    grid-template-columns: 60px 200px 90px 100px 120px 120px;
+    font-size: 0.9rem;
+  }
+
+  /* Prevent text from breaking awkwardly */
+  .t-head > div,
+  .t-row > div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* Ensure the container actually scrolls */
+.problem-list {
+  overflow-x: auto;   /* 👈 horizontal scroll */
+  overflow-y: hidden; /* 👈 disable vertical scroll inside */
+  -webkit-overflow-scrolling: touch; /* 👈 smooth iOS/Android scroll */
 }
 
 
 
 
+
 /*Menu Bar */
+
 
 
 
